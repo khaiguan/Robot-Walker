@@ -1,0 +1,12 @@
+sb.setContinuousServoSpeed(sb.servo(SBServo.ServoA), 50)
+sb.setServoPosition(sb.servo(SBServo.ServoA), 0)
+basic.showNumber(3)
+basic.showNumber(2)
+basic.showNumber(1)
+basic.showString("Go!")
+basic.forever(function () {
+    sb.setServoPosition(sb.servo(SBServo.ServoA), 50)
+    basic.pause(200)
+    sb.setServoPosition(sb.servo(SBServo.ServoA), 0)
+    basic.pause(200)
+})
